@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\UrlShortner.Core.Contracts\UrlShortner.Core.Contracts.csproj" />
     <ProjectReference Include="..\UrlShortner.Core.Domain\UrlShortner.Core.Domain.csproj" />
   </ItemGroup>
 

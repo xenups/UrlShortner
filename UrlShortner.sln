@@ -13,15 +13,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.Infra", "02.Infra", "{CD
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.Endpoint", "03.Endpoint", "{7B72C7AF-14DF-4016-AB33-B5C5008EF7A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlShortner.Core.Domain", "UrlShortner.Core.Domain\UrlShortner.Core.Domain.csproj", "{97E3A196-DB86-479E-BBE2-87B48462ED26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UrlShortner.Core.Domain", "UrlShortner.Core.Domain\UrlShortner.Core.Domain.csproj", "{97E3A196-DB86-479E-BBE2-87B48462ED26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlShortner.Core.ApplicationServices", "UrlShortner.Core.ApplicationServices\UrlShortner.Core.ApplicationServices.csproj", "{926368CC-18DD-4AFC-83D3-A716634F61AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UrlShortner.Core.ApplicationServices", "UrlShortner.Core.ApplicationServices\UrlShortner.Core.ApplicationServices.csproj", "{926368CC-18DD-4AFC-83D3-A716634F61AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlShortner.Infra.Data.Sql.Queries", "UrlShortner.Infra.Data.Sql.Queries\UrlShortner.Infra.Data.Sql.Queries.csproj", "{F965A40C-53EE-417C-B355-35470AD6D8C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UrlShortner.Endpoints.MVC", "UrlShortner.Endpoints.MVC\UrlShortner.Endpoints.MVC.csproj", "{5F977CCB-AB4E-4F9E-A0A4-F423DB3EA71A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlShortner.Infra.Data.Sql.Commands", "UrlShortner.Infra.Data.Sql.Commands\UrlShortner.Infra.Data.Sql.Commands.csproj", "{893F6422-73CB-49A7-8A77-433E02CB20B7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlShortner.Core.Contracts", "UrlShortner.Core.Contracts\UrlShortner.Core.Contracts.csproj", "{BEF44AB7-A324-4B00-93B0-04551558C192}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlShortner.Endpoints.MVC", "UrlShortner.Endpoints.MVC\UrlShortner.Endpoints.MVC.csproj", "{5F977CCB-AB4E-4F9E-A0A4-F423DB3EA71A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UrlShortner.Infra.Data.Sql", "UrlShortner.Infra.Data.Sql\UrlShortner.Infra.Data.Sql.csproj", "{B731F1F0-4B27-4D3A-9CAE-B6353F33CF3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,18 +37,18 @@ Global
 		{926368CC-18DD-4AFC-83D3-A716634F61AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{926368CC-18DD-4AFC-83D3-A716634F61AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{926368CC-18DD-4AFC-83D3-A716634F61AF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F965A40C-53EE-417C-B355-35470AD6D8C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F965A40C-53EE-417C-B355-35470AD6D8C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F965A40C-53EE-417C-B355-35470AD6D8C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F965A40C-53EE-417C-B355-35470AD6D8C2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{893F6422-73CB-49A7-8A77-433E02CB20B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{893F6422-73CB-49A7-8A77-433E02CB20B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{893F6422-73CB-49A7-8A77-433E02CB20B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{893F6422-73CB-49A7-8A77-433E02CB20B7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5F977CCB-AB4E-4F9E-A0A4-F423DB3EA71A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5F977CCB-AB4E-4F9E-A0A4-F423DB3EA71A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F977CCB-AB4E-4F9E-A0A4-F423DB3EA71A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F977CCB-AB4E-4F9E-A0A4-F423DB3EA71A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEF44AB7-A324-4B00-93B0-04551558C192}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEF44AB7-A324-4B00-93B0-04551558C192}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEF44AB7-A324-4B00-93B0-04551558C192}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEF44AB7-A324-4B00-93B0-04551558C192}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B731F1F0-4B27-4D3A-9CAE-B6353F33CF3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B731F1F0-4B27-4D3A-9CAE-B6353F33CF3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B731F1F0-4B27-4D3A-9CAE-B6353F33CF3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B731F1F0-4B27-4D3A-9CAE-B6353F33CF3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,9 +59,9 @@ Global
 		{7B72C7AF-14DF-4016-AB33-B5C5008EF7A8} = {44799AF3-9B1C-4ADB-ADB2-63C548453180}
 		{97E3A196-DB86-479E-BBE2-87B48462ED26} = {4574AB9B-A8F4-47A4-B19F-15D1BAB6DD01}
 		{926368CC-18DD-4AFC-83D3-A716634F61AF} = {4574AB9B-A8F4-47A4-B19F-15D1BAB6DD01}
-		{F965A40C-53EE-417C-B355-35470AD6D8C2} = {CD1BFBCD-8705-4B84-B97D-EF613F699B7B}
-		{893F6422-73CB-49A7-8A77-433E02CB20B7} = {CD1BFBCD-8705-4B84-B97D-EF613F699B7B}
 		{5F977CCB-AB4E-4F9E-A0A4-F423DB3EA71A} = {7B72C7AF-14DF-4016-AB33-B5C5008EF7A8}
+		{BEF44AB7-A324-4B00-93B0-04551558C192} = {4574AB9B-A8F4-47A4-B19F-15D1BAB6DD01}
+		{B731F1F0-4B27-4D3A-9CAE-B6353F33CF3F} = {CD1BFBCD-8705-4B84-B97D-EF613F699B7B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {81C6E701-3AF2-4057-8AFD-F64F38F5874E}
