@@ -14,12 +14,18 @@ namespace UrlShortner.Core.ApplicationServices.Urls.Commands.Shorter
 
         public ShorterServiceOutput Execute(ShorterServiceInput input)
         {
+            
+            if (string.IsNullOrEmpty(input.value))
+            {
+                throw new ArgumentNullException();
+            }
+
             string shortUrl = UrlShortner(input);
             
             var url = new URL()
             {
                 ShortPath = shortUrl,
-                LongPath = input.LongURLPath
+                LongPath = input.value
             };
             urlCommandRepository.AddToDb(url);
 
@@ -32,7 +38,7 @@ namespace UrlShortner.Core.ApplicationServices.Urls.Commands.Shorter
 
         private static string UrlShortner(ShorterServiceInput input)
         {
-            return input.LongURLPath.Substring(0, 3);
+            return input.value.Substring(0, 3);
         }
     }
 }

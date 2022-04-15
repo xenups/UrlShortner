@@ -1,6 +1,6 @@
 ﻿namespace UrlShortner.Core.Contracts.Urls;
 
-public class ShorterServiceInput
+public class LongerServiceInput
 {
     public string value { get; set; }
 }

@@ -16,5 +16,11 @@ namespace UrlShortner.Infra.Data.Sql
             _dbContext.UrlTable.Add(url);
             _dbContext.SaveChanges();
         }
+
+        public URL GetLongerUrlFromDb(string shorterUrl)
+        {  
+            var url =  _dbContext.UrlTable.Where(b => b.ShortPath == shorterUrl).First();
+            return url;
+        }
     }
 }
