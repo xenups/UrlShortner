@@ -9,5 +9,4 @@ namespace UrlShortner.Infra.Data.Sql
 
         public DbSet<URL> UrlTable { get; set; }
     }
-
 }

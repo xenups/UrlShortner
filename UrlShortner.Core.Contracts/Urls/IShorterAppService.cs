@@ -2,7 +2,7 @@
 
 namespace UrlShortner.Core.Contracts.Urls
 {
-    public interface IShorterService
+    public interface IShorterAppService
     {
         ShorterServiceOutput Execute(ShorterServiceInput shorterCommand);
     }
